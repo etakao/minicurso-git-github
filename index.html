@@ -6,9 +6,60 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
     <title>Minicurso Git e GitHub</title>
+    <script
+      type="text/javascript"
+      src="main.js"
+    ></script>
   </head>
+
   <body>
-    <h1>Olá Git</h1>
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+
+    <main>
+      <div class="inputs">
+        <input
+          id="operando1"
+          type="number"
+        />
+        <input
+          id="operando2"
+          type="number"
+        />
+
+        <span>=</span>
+
+        <div class="resultado-operacao">
+          <span id="resultado" />
+        </div>
+      </div>
+
+      <div class="operacoes">
+        <button
+          id="somar"
+          onclick="somar()"
+        >
+          Somar
+        </button>
+        <button
+          id="subtrair"
+          onclick="subtrair()"
+        >
+          Subtrair
+        </button>
+        <button
+          id="raiz"
+          onclick="raizQuadrada()"
+        >
+          Raiz quadrada
+        </button>
+      </div>
+    </main>
   </body>
 </html>
